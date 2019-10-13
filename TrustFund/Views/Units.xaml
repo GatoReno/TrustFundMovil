@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TrustFund.Units">
+   <ContentPage Title="Mis unidades">
+         <ContentPage.Content>
+            
+            <StackLayout VerticalOptions="Center" HorizontalOptions="CenterAndExpand"
+                         Margin="5,5,5,5">
+                <Label
+                Text="mis unidades Yisus Crist"></Label>
+                <Label
+                x:Name="StatusUnits">
+                    
+                </Label>
+                 <Label
+                x:Name="TotalUnits">
+                    
+                </Label>
+                 <Label
+                x:Name="TotalAmount">
+                    
+                </Label>
+            </StackLayout>
+        
+        
+    </ContentPage.Content>
+    </ContentPage>
+       <ContentPage Title="comprar unidades">
+         <ContentPage.Content>
+            
+            <StackLayout VerticalOptions="Center" HorizontalOptions="CenterAndExpand"
+                         Margin="5,5,5,5">
+                <Label x:Name="LabelMsn"
+                Text="comprar unidadest"></Label>
+                   <ActivityIndicator 
+                x:Name="BuyUnitsIndiCator"
+                IsRunning="true"
+                IsVisible="true"
+                               />
+            <ListView x:Name="ListTc" 
+                      CachingStrategy="RetainElement"
+                       ItemTapped="OnSelected_buyUnit"
+                      
+                    Margin="10,10,10,10">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+
+                        <ViewCell>
+
+                            <StackLayout Spacing="4" >
+                                <StackLayout 
+                                    Padding="5,0,5,0" 
+                                    HorizontalOptions="StartAndExpand" 
+                                    Orientation="Horizontal"
+                                    >
+                                    
+
+                                   <Image Source="{Binding img}"
+                                          WidthRequest="50"
+                                          HeightRequest="38"
+                                          />
+                                    
+                                    <Label x:Name="id"
+                                    Text="{Binding desc}"  
+                                    FontSize="10"/>
+                                    
+                                    
+                                     <Label x:Name="amount"
+                                    Text="{Binding amount}"  
+                                    FontSize="10"/>
+          
+
+
+                                </StackLayout>
+
+
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+                
+            </StackLayout>
+        
+        
+    </ContentPage.Content>
+    </ContentPage>
+       <ContentPage Title="Unidades Activas">
+         <ContentPage.Content>
+            
+            <StackLayout VerticalOptions="Center" HorizontalOptions="CenterAndExpand"
+                         Margin="5,5,5,5">
+                <Label
+                Text="Unidades Activas"></Label>
+            </StackLayout>
+        
+        
+    </ContentPage.Content>
+    </ContentPage>
+</TabbedPage>

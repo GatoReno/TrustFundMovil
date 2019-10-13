@@ -1,0 +1,66 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceAssemblyReference>true</ProduceAssemblyReference>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.0.0.497661" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.5.231" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Openpay.Xamarin" Version="1.0.25.3" />
+    <PackageReference Include="Xam.Plugin.Connectivity" Version="3.1.1" />
+    <PackageReference Include="Plugin.MediaManager.Forms" Version="0.7.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="MyPage.xaml" />
+    <EmbeddedResource Remove="MyTabbedPage.xaml" />
+    <EmbeddedResource Remove="MyUnitsPage.xaml" />
+    <EmbeddedResource Remove="BuyUnitsPage.xaml" />
+    <EmbeddedResource Remove="MyListViewPage.xaml" />
+    <EmbeddedResource Remove="ProjectPage.xaml" />
+    <EmbeddedResource Remove="ProjectPage.xaml" />
+    <EmbeddedResource Remove="Views\SubscriptionsListPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="MyPage.xaml.cs" />
+    <Compile Remove="BuyUnitsPage.cs" />
+    <Compile Remove="MyTabbedPage.xaml.cs" />
+    <Compile Remove="MyUnitsPage.xaml.cs" />
+    <Compile Remove="BuyUnitsPage.xaml.cs" />
+    <Compile Remove="Classes_\DataInfo.cs" />
+    <Compile Remove="Classes_\EmptyClass.cs" />
+    <Compile Remove="MyListViewPage.xaml.cs" />
+    <Compile Remove="ProjectPage.xaml.cs" />
+    <Compile Remove="ProjectInfo.cs" />
+    <Compile Remove="CardInfoPage.cs" />
+    <Compile Remove="Views\SubscriptionsListPage.xaml.cs" />
+    <Compile Remove="Views\:Users:abrahamrapa:Projects:TrustFund:TrustFund:Views:SignInPage.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models_\" />
+    <Folder Include="Classes_\" />
+    <Folder Include="Interfaces_\" />
+    <Folder Include="Views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Xamarin.iOS">
+      <HintPath>..\..\..\..\..\Library\Frameworks\Xamarin.iOS.framework\Versions\12.8.0.2\lib\mono\Xamarin.iOS\Xamarin.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android">
+      <HintPath>..\..\..\..\..\Library\Frameworks\Xamarin.Android.framework\Versions\9.2.3-0\lib\xamarin.android\xbuild-frameworks\MonoAndroid\v8.1\Mono.Android.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\Units.xaml.cs">
+      <DependentUpon>Units.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TrustFund.BuyUnitPage">
+    <ContentPage.Content>
+        
+        <StackLayout>
+            
+                   <ActivityIndicator 
+                x:Name="BuyUnitsIndiCator"
+                IsRunning="true"
+                IsVisible="true"
+                               />
+            <Image WidthRequest="150"
+                   HeightRequest="150"
+                   x:Name="Imgx1"/>
+            
+            <Label
+                x:Name="lbl1"
+                IsVisible="true"/>
+
+               
+            <Label
+                x:Name="lbx1"
+                IsVisible="true"/>
+
+               
+            <Label
+                x:Name="lbx2"
+                IsVisible="true"/>
+               
+            <Label
+                x:Name="lbx3"
+                IsVisible="true"/>
+            
+            <Button
+                Clicked="Handle_Clicked_BuyUnit"
+                Text="Comprar unidad"/>
+
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

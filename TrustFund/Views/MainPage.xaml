@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:TrustFund" x:Class="TrustFund.MainPage"
+             Title="Home">
+       
+    
+    <StackLayout Padding="0,10,0,10">
+           
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*" x:Name="firstRow" />
+                    <RowDefinition Height="3*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="100" />
+                </Grid.ColumnDefinitions>
+                <StackLayout 
+                Padding="5,0,5,0"
+                x:Name="s1"  
+                Grid.Row="0" Grid.Column="0" 
+                BindingContext="{x:Reference Name=s1}"  >
+                   
+                <Label x:Name="Msn" />
+                <Image
+                    x:Name="ImgProfile">
+                    
+              
+                     </Image>
+                <Label x:Name="UserNamelb" />
+                </StackLayout>
+                <StackLayout x:Name="s2" BackgroundColor="Silver" Grid.Row="0" Grid.Column="1" BindingContext="{x:Reference Name=s2}">
+                    <Button Text="Unidades" TextColor="Accent" Clicked="Handle_Clicked_PushUnidades" />
+                    <Button Text="Proyectos" TextColor="Accent" Clicked="Handle_Clicked_PushProjects"/>
+
+                    <Button Text="Planes" TextColor="Accent" Clicked="Handle_Clicked_PushPlans"/>
+                    <Button Text="Noticias" TextColor="Accent" Clicked="Handle_Clicked_PushNoticias" />
+                    <Button Text="Medallas" TextColor="Accent" Clicked="Handle_Clicked_PushMedallas" />
+
+                </StackLayout>
+            
+                <StackLayout x:Name="s3" BackgroundColor="Accent" Grid.Row="1" Grid.Column="0" BindingContext="{x:Reference Name=s3}">
+                    <Label  Text="xxx}" />
+                    <Label Text=" x " /> 
+                    <Label  Text="xx}" />
+                </StackLayout>
+            
+                <StackLayout x:Name="s4" BackgroundColor="Accent" Grid.Row="1" Grid.Column="1" BindingContext="{x:Reference Name=s4}">
+                    <Label Text=" x " /> 
+                    <Label Text=" x " />
+                    <Label Text=" x " /> 
+                </StackLayout>
+            
+                <StackLayout x:Name="s5" BackgroundColor="Black" Grid.Row="2" Grid.Column="0" BindingContext="{x:Reference Name=s5}">
+                    <Label Text=" x " /> 
+                    <Label Text=" x " />
+                    <Label Text=" x " /> 
+                </StackLayout>
+            
+                <StackLayout x:Name="s6" BackgroundColor="Black" Grid.Row="2" Grid.Column="1" BindingContext="{x:Reference Name=s6}">
+                   <Button Text="config"
+                           Clicked="Handle_Clicked_PushConfig" 
+                           />
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+            
+    
+ 
+</ContentPage>

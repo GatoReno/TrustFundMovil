@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TrustFund.ConfigPage">
+    <ContentPage.Content>
+        
+        <StackLayout>
+            <Label
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand"
+            x:Name="Labelmsn"></Label>
+        <Button Text="Borrar Datos de usuario"
+                x:Name="btnDeleteSQlite"
+                Clicked="Handle_Clicked"
+                ></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

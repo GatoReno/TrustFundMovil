@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TrustFund.BadgeInfoPAge">
+    <ContentPage.Content>
+        
+        <StackLayout
+            Margin="10,10,10,10"
+            >
+            <Image x:Name="Imgx1"/>
+            <Label x:Name="Lx1"/>
+            <Label x:Name="Lx2"/>
+            
+            <Label x:Name="Lx3"/>
+            
+            <Label x:Name="Lx4"/>
+            <Label x:Name="Lx5"/>
+            
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

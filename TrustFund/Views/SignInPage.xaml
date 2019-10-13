@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TrustFund.Views.SignInPage">
+    <ContentPage.Content>
+        <StackLayout Margin="10,60,10,10">
+            <ActivityIndicator
+                Margin="0,10"
+                IsRunning="true"
+                IsVisible="true"
+                x:Name="Cator"
+                />
+            <Label
+                Text="w8"
+                x:Name="ErrorMsn"
+                />
+            
+            
+            <Image
+                WidthRequest="150"
+                HeightRequest="150"
+                Source="https://trustfundapp.herokuapp.com/img/logo512.png"
+                />
+            
+            
+            <Entry
+                
+                x:Name="Username"/>
+            
+            <Entry
+                IsPassword="true"
+                x:Name="Pass"/>
+            <Button
+               Text="Ingresar"
+                x:Name="SubmitButton"
+                Clicked="Access_Login"
+            />
+            
+            
+            </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

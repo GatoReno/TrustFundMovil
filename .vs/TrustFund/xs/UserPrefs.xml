@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{930E1201-5D2D-4341-A41D-BBE61643E7F7}|Default">
+  <MonoDevelop.Ide.ItemProperties.TrustFund.Android PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TrustFund/Models_/PlanInfo.cs">
+    <Files>
+      <File FileName="TrustFund/Views/BuyUnitPage.xaml" Line="35" Column="48" />
+      <File FileName="TrustFund/Views/BuyUnitPage.xaml.cs" />
+      <File FileName="TrustFund/Models_/TokenSecret.cs" />
+      <File FileName="TrustFund/Models_/PlanInfo.cs" Line="11" Column="6" NotebookId="1" />
+      <File FileName="TrustFund/Models_/Plan.cs" NotebookId="1" />
+      <File FileName="TrustFund/Views/PlanInfo.xaml.cs" NotebookId="1" />
+      <File FileName="TrustFund.iOS/Main.cs" NotebookId="1" />
+      <File FileName="TrustFund/App.xaml.cs" NotebookId="1" />
+      <File FileName="TrustFund/Views/MainPage.xaml.cs" NotebookId="1" />
+      <File FileName="TrustFund/Views/SignInPage.xaml" NotebookId="1" />
+      <File FileName="TrustFund/Views/Units.xaml" NotebookId="1" />
+      <File FileName="TrustFund/Views/Units.xaml.cs" NotebookId="1" />
+      <File FileName="TrustFund/Views/SignInPage.xaml.cs" NotebookId="1" />
+      <File FileName="TrustFund/Views/BadgeInfoPAge.xaml.cs" NotebookId="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TrustFund" expanded="True">
+            <Node name="TrustFund" expanded="True">
+              <Node name="Models_" expanded="True">
+                <Node name="PlanInfo.cs" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.TrustFund.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.1336E13B-E65F-4800-9206-F596D23F5323" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

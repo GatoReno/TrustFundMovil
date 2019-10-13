@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TrustFund.BadgesList">
+    <ContentPage.Content>
+        
+        
+                <StackLayout
+            VerticalOptions="Center"
+            HorizontalOptions="Center">
+            
+            <Label Text="Projects"  x:Name="ylabel" />
+            <Label x:Name="xlabel" />
+            
+            
+            
+            
+            <ActivityIndicator 
+                x:Name="Cator"
+                IsRunning="False"
+                IsVisible="False"
+                               />
+            <ListView x:Name="ListBadges" 
+                      CachingStrategy="RetainElement"
+                        ItemTapped="OnSelected"
+                      
+                    Margin="10,10,10,10">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+
+                        <ViewCell>
+
+                            <StackLayout Spacing="4" >
+                                <StackLayout 
+                                    Padding="5,0,5,0" 
+                                    HorizontalOptions="StartAndExpand" 
+                                    Orientation="Horizontal"
+                                    >
+                                   
+                                   <Image Source="{Binding img}"
+                                          WidthRequest="50"
+                                          HeightRequest="38"
+                                          />
+                                    
+                                     <Label x:Name="name"
+                                    Text="{Binding name}"  
+                                    FontSize="10"/>
+                                    
+                                   
+                                 
+                                    
+                                       <Label x:Name="desc"
+                                    Text="{Binding desc}"  
+                                    FontSize="10"/>
+                                    
+                                    
+          
+
+
+                                </StackLayout>
+
+
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+            
+        </StackLayout>
+        
+        
+    </ContentPage.Content>
+</ContentPage>
